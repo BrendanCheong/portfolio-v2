@@ -1,5 +1,5 @@
-import { Button } from './ui/Button';
-import { Socials } from './Socials';
+import { Button } from '@/components/ui/Button';
+import { Socials } from '@/components/Socials';
 import { FileDown } from 'lucide-react';
 
 export function HeroActions() {

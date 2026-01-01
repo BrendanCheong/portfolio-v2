@@ -1,4 +1,4 @@
-import { TimelineItem } from './TimelineItem';
+import { TimelineItem } from '@/components/TimelineItem';
 
 interface TimelineEntry {
   name: string;

@@ -1,6 +1,5 @@
 ---
 import '../styles/globals.css';
-import QueryProvider from '../providers/QueryProvider';
 
 interface Props {
   title: string;
@@ -40,12 +39,10 @@ const { title, description = 'Full-stack software engineer from Singapore' } = A
     </script>
   </head>
   <body class="mx-auto flex min-h-screen max-w-3xl flex-col px-6 py-12 sm:px-8 lg:px-0">
-    <QueryProvider client:load>
-      <slot name="header" />
-      <main class="flex-grow">
-        <slot />
-      </main>
-      <slot name="footer" />
-    </QueryProvider>
+    <slot name="header" />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <slot name="footer" />
   </body>
 </html>

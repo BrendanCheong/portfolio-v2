@@ -2,10 +2,11 @@
 
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useMutation } from '@tanstack/react-query';
-import { Button } from './ui/Button';
-import { Input } from './ui/Input';
-import { Textarea } from './ui/Textarea';
+import { useMutation, QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { useState } from 'react';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Textarea } from '@/components/ui/Textarea';
 import { contactSchema, type ContactFormData } from '@/lib/schemas/contact';
 
 async function submitContactForm(data: ContactFormData): Promise<void> {
@@ -20,7 +21,7 @@ async function submitContactForm(data: ContactFormData): Promise<void> {
   }
 }
 
-export function ContactForm() {
+function ContactFormInner() {
   const {
     register,
     handleSubmit,
@@ -126,5 +127,15 @@ export function ContactForm() {
         {isSubmitting || mutation.isPending ? 'Sending...' : 'Send Message'}
       </Button>
     </form>
+  );
+}
+
+export function ContactForm() {
+  const [queryClient] = useState(() => new QueryClient());
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ContactFormInner />
+    </QueryClientProvider>
   );
 }

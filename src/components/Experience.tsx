@@ -1,9 +1,9 @@
 'use client';
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/Tabs';
-import { Timeline } from './Timeline';
-import careerData from '../data/career.json';
-import educationData from '../data/education.json';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
+import { Timeline } from '@/components/Timeline';
+import careerData from '@/data/career.json';
+import educationData from '@/data/education.json';
 
 export function Experience() {
   return (

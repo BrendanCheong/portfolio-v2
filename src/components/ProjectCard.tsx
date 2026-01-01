@@ -1,6 +1,6 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/Card';
-import { Badge } from './ui/Badge';
-import { Icon } from './Icon';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Badge } from '@/components/ui/Badge';
+import { Icon } from '@/components/Icon';
 
 interface Project {
   name: string;

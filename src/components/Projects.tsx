@@ -1,5 +1,5 @@
-import projectsData from '../data/projects.json';
-import { ProjectCard } from './ProjectCard';
+import projectsData from '@/data/projects.json';
+import { ProjectCard } from '@/components/ProjectCard';
 
 interface ProjectsProps {
   limit?: number;

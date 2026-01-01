@@ -1,10 +1,12 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import { ArrowLeft } from 'lucide-react';
+
+// Prerender blog posts as static pages
+export const prerender = true;
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -27,7 +29,7 @@ const { Content } = await post.render();
   
   <article class="pb-16">
     <a href="/blog" class="link mb-6 inline-flex items-center gap-1 text-sm">
-      <ArrowLeft className="size-4" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
       Back to blog
     </a>
 

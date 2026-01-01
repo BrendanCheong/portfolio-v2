@@ -1,6 +1,6 @@
-import { Avatar, AvatarFallback, AvatarImage } from './ui/Avatar';
-import { Badge } from './ui/Badge';
-import { Icon } from './Icon';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/Avatar';
+import { Badge } from '@/components/ui/Badge';
+import { Icon } from '@/components/Icon';
 
 interface TimelineEntry {
   name: string;

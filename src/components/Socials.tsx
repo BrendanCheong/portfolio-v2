@@ -1,6 +1,6 @@
-import socialsData from '../data/socials.json';
-import { Icon } from './Icon';
-import { Button } from './ui/Button';
+import socialsData from '@/data/socials.json';
+import { Icon } from '@/components/Icon';
+import { Button } from '@/components/ui/Button';
 
 export function Socials() {
   return (
