@@ -37,4 +37,4 @@ pnpm-debug.log*
 # AI md files
 CLAUDE.md
 AGENTS.md
-PLAN.md
+/docs/plans/
