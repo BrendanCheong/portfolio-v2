@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<Layout title="Blog | Brendan Cheong">
+  <Header slot="header" />
+  
+  <article class="flex flex-col gap-8 pb-16">
+    <header>
+      <h1 class="title text-4xl sm:text-5xl">blog</h1>
+      <p class="mt-4 text-muted-foreground">
+        Thoughts, tutorials, and random musings.
+      </p>
+    </header>
+
+    <div class="flex flex-col gap-6">
+      {sortedPosts.map((post) => (
+        <a
+          href={`/blog/${post.slug}`}
+          class="group rounded-lg border p-6 transition-colors hover:bg-accent"
+        >
+          <h2 class="text-lg font-semibold group-hover:text-primary">
+            {post.data.title}
+          </h2>
+          <p class="mt-2 text-sm text-muted-foreground">
+            {post.data.description}
+          </p>
+          <p class="mt-2 text-xs text-muted-foreground">
+            {new Date(post.data.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })}
+          </p>
+        </a>
+      ))}
+    </div>
+  </article>
+
+  <Footer slot="footer" />
+</Layout>

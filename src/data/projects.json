@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "name": "Build.me",
+      "description": "Price aggregator for computer parts. Simplifies PC part price comparisons by collating data from local e-commerce platforms with analytical and data visualization tools.",
+      "image": "/img/projects/build-me.png",
+      "tags": ["React", "TailwindCSS", "MongoDB", "Puppeteer"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://build-me.netlify.app",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/BrendanCheong/Build.me",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Lights & Locks",
+      "description": "An open-source e-commerce platform for lights and locks. Customers can search, purchase, and service products while admins manage service requests.",
+      "image": "/img/projects/lights-and-locks.png",
+      "tags": ["PyQT5", "Flask", "MySQL", "MongoDB"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/BrendanCheong/Lights-And-Locks",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "TaskMaster",
+      "description": "A mobile-friendly to-do list app with user accounts, tags, filtering, and search capabilities. Features a clean UI for task prioritization and management.",
+      "image": "/img/projects/task-master.png",
+      "tags": ["Next.js", "Ruby on Rails", "MaterialUI", "MySQL"],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://task-master-cvwo.vercel.app",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/BrendanCheong/TaskMaster",
+          "icon": "github"
+        }
+      ]
+    }
+  ]
+}

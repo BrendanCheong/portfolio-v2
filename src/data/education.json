@@ -1,0 +1,15 @@
+{
+  "education": [
+    {
+      "name": "National University of Singapore",
+      "href": "https://www.nus.edu.sg/",
+      "title": "Bachelor of Computing in Computer Science",
+      "logo": "/img/nus.png",
+      "start": "Aug 2020",
+      "end": "Present",
+      "description": [
+        "Aspiring software engineer focused on building user-friendly applications"
+      ]
+    }
+  ]
+}

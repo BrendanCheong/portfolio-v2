@@ -1,0 +1,8 @@
+{
+  "introduction": {
+    "greeting": "hi, i'm brendan. 👋",
+    "description": "Backend by profession, full-stack by passion. I build and self-host the lot."
+  },
+  "age": 28,
+  "location": "Singapore 🇸🇬"
+}

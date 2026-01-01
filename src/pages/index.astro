@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Experience } from '../components/Experience.tsx';
+import { Projects } from '../components/Projects.tsx';
+import { Socials } from '../components/Socials.tsx';
+import { HeroActions } from '../components/HeroActions.tsx';
+import { ViewMoreLink } from '../components/ViewMoreLink.tsx';
+import homeData from '../data/home.json';
+
+
+const LIMIT = 2;
+---
+
+<Layout title="Brendan Cheong | Software Engineer">
+  <Header slot="header" />
+  
+  <article class="flex flex-col gap-16 pb-16">
+    <!-- Hero Section -->
+    <section class="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
+      <div class="relative">
+        <img
+          src="/img/profile.png"
+          alt="Brendan Cheong"
+          class="size-40 rounded-full object-cover shadow-lg md:size-48"
+        />
+      </div>
+
+      <div class="flex max-w-[320px] flex-col sm:max-w-full">
+        <h1 class="title text-balance text-4xl sm:text-5xl">
+          {homeData.introduction.greeting}
+        </h1>
+
+        <p class="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
+          {homeData.age}yo software engineer from {homeData.location}
+        </p>
+
+        <p class="mt-4 max-w-sm text-balance text-sm sm:text-base">
+          {homeData.introduction.description}
+        </p>
+
+        <HeroActions client:load />
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section>
+      <Experience client:load />
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="flex flex-col gap-8">
+      <div class="flex items-center justify-between">
+        <h2 class="title text-2xl sm:text-3xl">featured projects</h2>
+        <ViewMoreLink href="/projects" client:load />
+      </div>
+      <Projects limit={LIMIT} client:load />
+    </section>
+  </article>
+
+  <Footer slot="footer" />
+</Layout>

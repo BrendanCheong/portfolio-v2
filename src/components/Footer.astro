@@ -1,0 +1,22 @@
+---
+import socialsData from '../data/socials.json';
+---
+
+<footer class="mt-16 flex flex-col items-center justify-between gap-4 border-t py-8 sm:flex-row">
+  <div class="flex items-center gap-4">
+    {socialsData.socials.map((social) => (
+      <a
+        href={social.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link text-sm"
+        title={social.name}
+      >
+        {social.name}
+      </a>
+    ))}
+  </div>
+  <p class="text-sm text-muted-foreground">
+    © {new Date().getFullYear()} Brendan Cheong
+  </p>
+</footer>

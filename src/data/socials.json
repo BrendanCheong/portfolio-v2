@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/bcej/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/BrendanCheong",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:brendancej1@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}

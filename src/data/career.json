@@ -1,0 +1,52 @@
+{
+  "career": [
+    {
+      "name": "GovTech",
+      "href": "https://www.developer.tech.gov.sg/products/categories/productivity-tools/gathersg/overview.html",
+      "title": "Software Engineer (Intern)",
+      "logo": "/img/govtech.png",
+      "start": "Jan 2024",
+      "description": [
+        "Interning for the GatherSG Team at GovTech Singapore"
+      ]
+    },
+    {
+      "name": "Hypotenuse AI",
+      "href": "https://hypotenuse.ai",
+      "title": "Fullstack Developer (Intern)",
+      "logo": "/img/hypotenuse.png",
+      "start": "May 2023",
+      "end": "Nov 2023",
+      "description": [
+        "Increased conversion rate by redesigning the onboarding process for new users with React.js, Material UI, and Zustand",
+        "Developed a scalable folder and file system leveraging tree traversal algorithms to manage hundreds of user documents",
+        "Reduced translation cost by 50% by refactoring the API to use AI models"
+      ]
+    },
+    {
+      "name": "Solar AI Technologies",
+      "href": "https://getsolar.ai",
+      "title": "Software Engineer (Intern)",
+      "logo": "/img/solarai.png",
+      "start": "May 2022",
+      "end": "Aug 2022",
+      "description": [
+        "Built and launched a new customer portal for over 100 customers to manage their solar installation",
+        "Developed high-performance serverless GraphQL APIs backed by ElasticSearch and DynamoDB",
+        "Built an internal CRM web application managing over 200 customer contracts"
+      ]
+    },
+    {
+      "name": "Ministry of Communications and Information",
+      "href": "https://www.mci.gov.sg/",
+      "title": "Robotic Process Automation Intern",
+      "logo": "/img/mci.png",
+      "start": "Dec 2021",
+      "end": "Apr 2022",
+      "description": [
+        "Built an automated bot to register over 500 staff members for Zoom meetings weekly",
+        "Created automated email scripts reducing manual email sending time by 50%"
+      ]
+    }
+  ]
+}

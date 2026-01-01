@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ContactForm } from '../components/ContactForm.tsx';
+---
+
+<Layout title="Contact | Brendan Cheong">
+  <Header slot="header" />
+  
+  <article class="flex flex-col gap-8 pb-16">
+    <header>
+      <h1 class="title text-4xl sm:text-5xl">contact</h1>
+      <p class="mt-4 text-muted-foreground">
+        Have a question or want to work together? Send me a message!
+      </p>
+    </header>
+
+    <div class="max-w-md">
+      <ContactForm client:load />
+    </div>
+  </article>
+
+  <Footer slot="footer" />
+</Layout>

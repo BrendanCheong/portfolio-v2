@@ -1,0 +1,23 @@
+---
+import { ThemeToggle } from './ThemeToggle';
+
+const navItems = [
+  { name: 'home', href: '/' },
+  { name: 'projects', href: '/projects' },
+  { name: 'contact', href: '/contact' },
+];
+---
+
+<header class="mb-12 flex items-center justify-between">
+  <nav class="flex items-center gap-6">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        class="link text-sm font-medium lowercase"
+      >
+        {item.name}
+      </a>
+    ))}
+  </nav>
+  <ThemeToggle client:load />
+</header>
