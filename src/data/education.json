@@ -3,12 +3,13 @@
     {
       "name": "National University of Singapore",
       "href": "https://www.nus.edu.sg/",
-      "title": "Bachelor of Computing in Computer Science",
+      "title": "Bachelor of Social Sciences, Economics",
       "logo": "/img/nus.png",
       "start": "Aug 2020",
-      "end": "Present",
+      "end": "May 2025",
       "description": [
-        "Aspiring software engineer focused on building user-friendly applications"
+        "Graduated with a second major in Business Analytics.",
+        "Relevant coursework: Data Structures and Algorithms, Object Oriented Programming, Database Systems, Software Engineering."
       ]
     }
   ]

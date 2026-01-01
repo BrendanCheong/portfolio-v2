@@ -2,50 +2,55 @@
   "career": [
     {
       "name": "GovTech",
-      "href": "https://www.developer.tech.gov.sg/products/categories/productivity-tools/gathersg/overview.html",
-      "title": "Software Engineer (Intern)",
+      "href": "https://www.tech.gov.sg/products-and-services/for-government-agencies/service-delivery/gathersg/",
+      "title": "Software Engineer Intern",
       "logo": "/img/govtech.png",
       "start": "Jan 2024",
+      "end": "Jun 2024",
       "description": [
-        "Interning for the GatherSG Team at GovTech Singapore"
+        "Engineered a cross-agency platform using React.js and Node.js, streamlining response workflows for 1,200+ daily citizen inquiries.",
+        "Architected a queuing API with AWS SQS to handle 1,000+ daily AI requests, reducing failure rates by 80% under heavy load.",
+        "Accelerated deployment cycles by building automated Docker and GitLab CI/CD pipelines for EC2 environments.",
+        "Implemented a serverless database seeding system via AWS Lambda, reducing test environment setup time and boosting coverage."
       ]
     },
     {
       "name": "Hypotenuse AI",
       "href": "https://hypotenuse.ai",
-      "title": "Fullstack Developer (Intern)",
-      "logo": "/img/hypotenuse.png",
+      "title": "Fullstack Developer Intern",
+      "logo": "/img/hypotenuse-ai.png",
       "start": "May 2023",
       "end": "Nov 2023",
       "description": [
-        "Increased conversion rate by redesigning the onboarding process for new users with React.js, Material UI, and Zustand",
-        "Developed a scalable folder and file system leveraging tree traversal algorithms to manage hundreds of user documents",
-        "Reduced translation cost by 50% by refactoring the API to use AI models"
+        "Increased API response speeds by optimizing database queries and implementing parallel processing with Python Celery workers.",
+        "Reduced translation costs by 50% by refactoring the API service to utilize cost-effective Large Language Models.",
+        "Designed a scalable file management system handling 10,000+ documents using DynamoDB, FastAPI and React.js.",
+        "Increased user conversion rates through a strategic redesign of the onboarding workflow."
       ]
     },
     {
-      "name": "Solar AI Technologies",
+      "name": "GetSolar (Formerly SolarAI)",
       "href": "https://getsolar.ai",
-      "title": "Software Engineer (Intern)",
-      "logo": "/img/solarai.png",
+      "title": "Software Engineer Intern",
+      "logo": "/img/getsolar.png",
       "start": "May 2022",
       "end": "Aug 2022",
       "description": [
-        "Built and launched a new customer portal for over 100 customers to manage their solar installation",
-        "Developed high-performance serverless GraphQL APIs backed by ElasticSearch and DynamoDB",
-        "Built an internal CRM web application managing over 200 customer contracts"
+        "Launched a bespoke CRM application using TypeScript and React.js to manage 200+ customer contracts at scale.",
+        "Built high-performance serverless GraphQL APIs backed by ElasticSearch, reducing customer data search times",
+        "Achieved 90% code coverage by establishing comprehensive Jest unit and integration testing protocols."
       ]
     },
     {
-      "name": "Ministry of Communications and Information",
-      "href": "https://www.mci.gov.sg/",
-      "title": "Robotic Process Automation Intern",
-      "logo": "/img/mci.png",
+      "name": "Ministry of Digital Development and Information",
+      "href": "https://www.mddi.gov.sg/",
+      "title": "Software Engineer Intern",
+      "logo": "/img/mddi.png",
       "start": "Dec 2021",
       "end": "Apr 2022",
       "description": [
-        "Built an automated bot to register over 500 staff members for Zoom meetings weekly",
-        "Created automated email scripts reducing manual email sending time by 50%"
+        "Engineered an automated email system that saved staff-hours weekly by reducing manual communication overhead.",
+        "Developed Python scripts integrating Google Calendar API to automate meeting scheduling for 500+ staff members."
       ]
     }
   ]

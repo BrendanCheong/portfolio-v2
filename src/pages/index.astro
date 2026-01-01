@@ -4,7 +4,6 @@ import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import { Experience } from '@/components/Experience.tsx';
 import { Projects } from '@/components/Projects.tsx';
-import { Socials } from '@/components/Socials.tsx';
 import { HeroActions } from '@/components/HeroActions.tsx';
 import { ViewMoreLink } from '@/components/ViewMoreLink.tsx';
 import homeData from '@/data/home.json';
@@ -52,7 +51,7 @@ const LIMIT = 2;
     <!-- Featured Projects Section -->
     <section class="flex flex-col gap-8">
       <div class="flex items-center justify-between">
-        <h2 class="title text-2xl sm:text-3xl">featured projects</h2>
+        <h2 class="title text-2xl sm:text-3xl">Featured projects</h2>
         <ViewMoreLink href="/projects" client:load />
       </div>
       <Projects limit={LIMIT} client:load />
