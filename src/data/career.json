@@ -2,6 +2,17 @@
   "career": [
     {
       "name": "GovTech",
+      "href": "https://www.developer.tech.gov.sg/products/categories/data-and-apis/datahive/overview",
+      "title": "Software Engineer (Technology Associate Programme)",
+      "logo": "/img/govtech.png",
+      "start": "Aug 2025",
+      "end": "Present",
+      "description": [
+        "Curently developing an agency-to-agency data sharing platform"
+      ]
+    },
+    {
+      "name": "GovTech",
       "href": "https://www.tech.gov.sg/products-and-services/for-government-agencies/service-delivery/gathersg/",
       "title": "Software Engineer Intern",
       "logo": "/img/govtech.png",
