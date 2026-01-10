@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
+import { render } from '@react-email/components';
+import ContactEmail from '@/emails/ContactEmail';
 
 const resend = new Resend(import.meta.env.RESEND_API_KEY);
 
@@ -15,17 +17,13 @@ export const POST: APIRoute = async ({ request }) => {
       });
     }
 
+    const emailHtml = await render(ContactEmail({ name, email, message }));
+
     await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>',
-      to: 'brendancheong01@gmail.com',
+      from: 'Portfolio <contact@brendancej.tech>',
+      to: ['brendancej1@gmail.com'],
       subject: `Portfolio Contact: Message from ${name}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
-      `,
+      html: emailHtml,
       replyTo: email,
     });
 
