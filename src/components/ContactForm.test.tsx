@@ -33,9 +33,9 @@ describe('ContactForm', () => {
   it('renders form fields correctly', () => {
     renderWithQueryClient(<ContactForm />);
 
-    expect(screen.getByLabelText(/name/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/email/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/message/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/name/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/email/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/message/i)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /send message/i })).toBeInTheDocument();
   });
 
@@ -57,7 +57,7 @@ describe('ContactForm', () => {
     const user = userEvent.setup();
     renderWithQueryClient(<ContactForm />);
 
-    const emailInput = screen.getByLabelText(/email/i);
+    const emailInput = screen.getByPlaceholderText(/email/i);
     await user.type(emailInput, 'invalid-email');
 
     const submitButton = screen.getByRole('button', { name: /send message/i });
@@ -77,9 +77,9 @@ describe('ContactForm', () => {
 
     renderWithQueryClient(<ContactForm />);
 
-    const nameInput = screen.getByLabelText(/name/i);
-    const emailInput = screen.getByLabelText(/email/i);
-    const messageInput = screen.getByLabelText(/message/i);
+    const nameInput = screen.getByPlaceholderText(/name/i);
+    const emailInput = screen.getByPlaceholderText(/email/i);
+    const messageInput = screen.getByPlaceholderText(/message/i);
 
     await user.type(nameInput, 'John Doe');
     await user.type(emailInput, 'john@example.com');
@@ -127,9 +127,9 @@ describe('ContactForm', () => {
 
     renderWithQueryClient(<ContactForm />);
 
-    await user.type(screen.getByLabelText(/name/i), 'John Doe');
-    await user.type(screen.getByLabelText(/email/i), 'john@example.com');
-    await user.type(screen.getByLabelText(/message/i), 'Test message');
+    await user.type(screen.getByPlaceholderText(/name/i), 'John Doe');
+    await user.type(screen.getByPlaceholderText(/email/i), 'john@example.com');
+    await user.type(screen.getByPlaceholderText(/message/i), 'Test message');
 
     const submitButton = screen.getByRole('button', { name: /send message/i });
     await user.click(submitButton);
@@ -159,9 +159,9 @@ describe('ContactForm', () => {
 
     renderWithQueryClient(<ContactForm />);
 
-    await user.type(screen.getByLabelText(/name/i), 'John Doe');
-    await user.type(screen.getByLabelText(/email/i), 'john@example.com');
-    await user.type(screen.getByLabelText(/message/i), 'Test message');
+    await user.type(screen.getByPlaceholderText(/name/i), 'John Doe');
+    await user.type(screen.getByPlaceholderText(/email/i), 'john@example.com');
+    await user.type(screen.getByPlaceholderText(/message/i), 'Test message');
 
     const submitButton = screen.getByRole('button', { name: /send message/i });
     await user.click(submitButton);
