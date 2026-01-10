@@ -19,8 +19,8 @@
       "start": "Jan 2024",
       "end": "Jun 2024",
       "description": [
-        "Built a case management system using React.js and Node.js to handle 1,200+ daily inquiries, improving SQL database speeds and improving response times",
-        "Developed backend services and queuing APIs using AWS SQS to support high-load AI features, while implementing Docker containers and AWS Lambda database seeding scripts to automate CI/CD pipelines"
+        "Built a case management system using React.js and Node.js to handle 1,200+ daily inquiries, improving SQL database speeds and improving response times.",
+        "Developed backend services and queuing APIs using AWS SQS to support high-load AI features, while implementing Docker containers and AWS Lambda database seeding scripts to automate CI/CD pipelines.."
       ]
     },
     {
@@ -44,7 +44,7 @@
       "end": "Aug 2022",
       "description": [
         "Launched a bespoke CRM application using TypeScript and React.js to manage 200+ customer contracts at scale.",
-        "Built high-performance serverless GraphQL APIs backed by ElasticSearch, reducing customer data search times",
+        "Built high-performance serverless GraphQL APIs backed by ElasticSearch, reducing customer data search times.",
         "Achieved 90% code coverage by establishing comprehensive Jest unit and integration testing protocols."
       ]
     },
