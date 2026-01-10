@@ -3,6 +3,6 @@
     "greeting": "Hi there, I'm Brendan. 👋",
     "description": "Fullstack engineer by profession, running enthusiast and scuba diver by passion."
   },
-  "age": 26,
+  "birthDate": "1999-10-28",
   "location": "Singapore 🇸🇬"
 }

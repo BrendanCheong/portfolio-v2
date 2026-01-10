@@ -1,7 +1,10 @@
 ---
+type VariantType = 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
+type SizeType = 'default' | 'sm' | 'lg' | 'icon';
+
 interface Props {
-  variant?: 'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link';
-  size?: 'default' | 'sm' | 'lg' | 'icon';
+  variant?: VariantType;
+  size?: SizeType;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
@@ -19,9 +22,18 @@ const {
   as = 'button',
   href = '',
   download = false,
+}: {
+  variant?: VariantType;
+  size?: SizeType;
+  className?: string;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
+  as?: 'a' | 'button';
+  href?: string;
+  download?: boolean;
 } = Astro.props;
 
-const variantClasses = {
+const variantClasses: Record<VariantType, string> = {
   default: 'bg-primary text-primary-foreground hover:bg-primary/90',
   destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
   outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
@@ -30,7 +42,7 @@ const variantClasses = {
   link: 'text-primary underline-offset-4 hover:underline',
 };
 
-const sizeClasses = {
+const sizeClasses: Record<SizeType, string> = {
   default: 'h-10 px-4 py-2',
   sm: 'h-9 rounded-md px-3',
   lg: 'h-11 rounded-md px-8',

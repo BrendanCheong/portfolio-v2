@@ -19,10 +19,8 @@
       "start": "Jan 2024",
       "end": "Jun 2024",
       "description": [
-        "Engineered a cross-agency platform using React.js and Node.js, streamlining response workflows for 1,200+ daily citizen inquiries.",
-        "Architected a queuing API with AWS SQS to handle 1,000+ daily AI requests, reducing failure rates by 80% under heavy load.",
-        "Accelerated deployment cycles by building automated Docker and GitLab CI/CD pipelines for EC2 environments.",
-        "Implemented a serverless database seeding system via AWS Lambda, reducing test environment setup time and boosting coverage."
+        "Built a case management system using React.js and Node.js to handle 1,200+ daily inquiries, improving SQL database speeds and improving response times",
+        "Developed backend services and queuing APIs using AWS SQS to support high-load AI features, while implementing Docker containers and AWS Lambda database seeding scripts to automate CI/CD pipelines"
       ]
     },
     {
@@ -33,10 +31,8 @@
       "start": "May 2023",
       "end": "Nov 2023",
       "description": [
-        "Increased API response speeds by optimizing database queries and implementing parallel processing with Python Celery workers.",
-        "Reduced translation costs by 50% by refactoring the API service to utilize cost-effective Large Language Models.",
-        "Designed a scalable file management system handling 10,000+ documents using DynamoDB, FastAPI and React.js.",
-        "Increased user conversion rates through a strategic redesign of the onboarding workflow."
+        "Built a drag-and-drop file system using React.js and DynamoDB to manage 10,000+ AI-generated documents, while speeding up bulk content generation by implementing parallel processing with Python Celery.",
+        "Reduced translation costs by 50% by switching to internal LLMs, and improved the user onboarding experience by redesigning the workflow and API polling logic."
       ]
     },
     {

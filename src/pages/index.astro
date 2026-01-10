@@ -12,6 +12,14 @@ import profileImg from '@/assets/profile.png';
 
 
 const LIMIT = 2;
+const birthDate = new Date(homeData.birthDate);
+const today = new Date();
+const age = today.getFullYear() - birthDate.getFullYear() - (
+  today.getMonth() < birthDate.getMonth() ||
+  (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate())
+    ? 1
+    : 0
+);
 ---
 
 <Layout title="Brendan Cheong | Software Engineer">
@@ -24,12 +32,12 @@ const LIMIT = 2;
         <Image
           src={profileImg}
           alt="Brendan Cheong"
-          width={160}
-          height={160}
+          width={233}
+          height={175}
           format="webp"
           quality={90}
           loading="eager"
-          class="size-40 rounded-full object-cover shadow-lg md:size-48"
+          class="h-[175px] w-[233px] rounded-lg object-cover shadow-lg md:h-[233px] md:w-[175px]"
         />
       </div>
 
@@ -39,7 +47,7 @@ const LIMIT = 2;
         </h1>
 
         <p class="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-          {homeData.age}yo software engineer from {homeData.location}
+          {age}yo software engineer from {homeData.location}
         </p>
 
         <p class="mt-4 max-w-sm text-balance text-sm sm:text-base">
