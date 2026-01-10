@@ -15,15 +15,26 @@ const icons: Record<string, LucideIcon> = {
   youtube: Youtube,
 };
 
-interface IconProps {
+interface IconProps extends React.HTMLAttributes<SVGElement> {
   name: string;
   className?: string;
+  ariaLabel?: string;
 }
 
-export function Icon({ name, className }: IconProps) {
+export function Icon({ name, className, ariaLabel, ...props }: IconProps) {
   const IconComponent = icons[name.toLowerCase()];
   if (!IconComponent) {
     return null;
   }
-  return <IconComponent className={className} />;
+  return (
+    <IconComponent
+      className={className}
+      aria-label={ariaLabel}
+      aria-labelledby={ariaLabel ? `icon-${name}` : undefined}
+      aria-hidden={!ariaLabel}
+      role="img"
+      alt-text={ariaLabel}
+      {...props}
+    />
+  );
 }

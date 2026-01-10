@@ -1,0 +1,15 @@
+---
+interface Props {
+  href: string;
+  text: string;
+  position?: 'left' | 'right';
+}
+
+const { href, text, position = 'right' } = Astro.props;
+---
+
+<a href={href} class="link flex items-center gap-1 text-sm font-medium transition-colors">
+  {position === 'left' && <slot name="icon" />}
+  <span>{text}</span>
+  {position === 'right' && <slot name="icon" />}
+</a>

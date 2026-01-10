@@ -25,7 +25,7 @@ export function TimelineItem({ item }: TimelineItemProps) {
       <div className="flex flex-col items-center">
         <a href={href} target="_blank" rel="noopener noreferrer" className="z-10">
           <Avatar className="size-12 border bg-background">
-            <AvatarImage src={logo} alt={name} className="object-contain p-1" />
+            <AvatarImage src={logo} alt={name} className="object-contain p-1" loading="lazy" />
             <AvatarFallback>{name.charAt(0)}</AvatarFallback>
           </Avatar>
         </a>
@@ -60,8 +60,8 @@ export function TimelineItem({ item }: TimelineItemProps) {
           <div className="mt-3 flex flex-wrap gap-2">
             {links.map((link, index) => (
               <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
-                <Badge variant="secondary" className="flex items-center gap-1 px-2 py-1">
-                  <Icon name={link.icon} className="size-3" />
+                <Badge variant="secondary" className="flex items-start gap-1 px-2 py-1">
+                  <Icon name={link.icon} className="size-3" ariaLabel={link.name} />
                   <span className="text-xs">{link.name}</span>
                 </Badge>
               </a>

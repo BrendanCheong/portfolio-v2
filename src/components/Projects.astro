@@ -1,0 +1,17 @@
+---
+import projectsData from '@/data/projects.json';
+import ProjectCard from './ProjectCard.astro';
+
+interface Props {
+  limit?: number;
+}
+
+const { limit } = Astro.props;
+const projects = limit ? projectsData.projects.slice(0, limit) : projectsData.projects;
+---
+
+<div class="grid gap-4 sm:grid-cols-2">
+  {projects.map((project) => (
+    <ProjectCard project={project} />
+  ))}
+</div>

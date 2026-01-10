@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { Projects as ProjectsList } from '@/components/Projects.tsx';
+import Projects from '@/components/Projects.astro';
 ---
 
 <Layout title="Projects | Brendan Cheong">
@@ -16,7 +16,7 @@ import { Projects as ProjectsList } from '@/components/Projects.tsx';
       </p>
     </header>
 
-    <ProjectsList client:load />
+    <Projects />
   </article>
 
   <Footer slot="footer" />

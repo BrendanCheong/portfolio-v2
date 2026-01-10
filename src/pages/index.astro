@@ -3,10 +3,12 @@ import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import { Experience } from '@/components/Experience.tsx';
-import { Projects } from '@/components/Projects.tsx';
-import { HeroActions } from '@/components/HeroActions.tsx';
-import { ViewMoreLink } from '@/components/ViewMoreLink.tsx';
+import Projects from '@/components/Projects.astro';
+import HeroActions from '@/components/HeroActions.astro';
+import ViewMoreLink from '@/components/ViewMoreLink.astro';
 import homeData from '@/data/home.json';
+import { Image } from 'astro:assets';
+import profileImg from '@/assets/profile.png';
 
 
 const LIMIT = 2;
@@ -19,9 +21,14 @@ const LIMIT = 2;
     <!-- Hero Section -->
     <section class="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
       <div class="relative">
-        <img
-          src="/img/profile.png"
+        <Image
+          src={profileImg}
           alt="Brendan Cheong"
+          width={160}
+          height={160}
+          format="webp"
+          quality={90}
+          loading="eager"
           class="size-40 rounded-full object-cover shadow-lg md:size-48"
         />
       </div>
@@ -39,7 +46,7 @@ const LIMIT = 2;
           {homeData.introduction.description}
         </p>
 
-        <HeroActions client:load />
+        <HeroActions />
       </div>
     </section>
 
@@ -52,9 +59,9 @@ const LIMIT = 2;
     <section class="flex flex-col gap-8">
       <div class="flex items-center justify-between">
         <h2 class="title text-2xl sm:text-3xl">Featured projects</h2>
-        <ViewMoreLink href="/projects" client:load />
+        <ViewMoreLink href="/projects" />
       </div>
-      <Projects limit={LIMIT} client:load />
+      <Projects limit={LIMIT} />
     </section>
   </article>
 
