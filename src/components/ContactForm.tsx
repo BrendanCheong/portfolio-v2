@@ -59,73 +59,70 @@ function ContactFormInner() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4" noValidate>
-      <div className="flex flex-col gap-2">
-        <label htmlFor="name" className="text-sm font-medium">
-          Name
-        </label>
+    <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-2 sm:grid-cols-2" noValidate>
+      <div className="h-16">
         <Input
           id="name"
           {...register('name')}
           type="text"
-          placeholder="Your name"
+          placeholder="Name"
+          autoComplete="given-name"
           aria-invalid={errors.name ? 'true' : 'false'}
           aria-describedby={errors.name ? 'name-error' : undefined}
         />
         {errors.name && (
-          <p id="name-error" className="text-sm text-destructive">
+          <p id="name-error" className="mt-1 text-sm text-destructive">
             {errors.name.message}
           </p>
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label htmlFor="email" className="text-sm font-medium">
-          Email
-        </label>
+      <div className="h-16">
         <Input
           id="email"
           {...register('email')}
           type="email"
-          placeholder="your@email.com"
+          placeholder="Email"
+          autoComplete="email"
           aria-invalid={errors.email ? 'true' : 'false'}
           aria-describedby={errors.email ? 'email-error' : undefined}
         />
         {errors.email && (
-          <p id="email-error" className="text-sm text-destructive">
+          <p id="email-error" className="mt-1 text-sm text-destructive">
             {errors.email.message}
           </p>
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-sm font-medium">
-          Message
-        </label>
+      <div className="h-32 sm:col-span-2">
         <Textarea
+          rows={4}
           id="message"
           {...register('message')}
-          placeholder="Your message..."
-          rows={5}
+          placeholder="Drop me a message with any career opportunities or just to say hi!"
+          autoComplete="off"
+          className="resize-none"
           aria-invalid={errors.message ? 'true' : 'false'}
           aria-describedby={errors.message ? 'message-error' : undefined}
         />
         {errors.message && (
-          <p id="message-error" className="text-sm text-destructive">
+          <p id="message-error" className="mt-1 text-sm text-destructive">
             {errors.message.message}
           </p>
         )}
       </div>
 
       {mutation.isError && (
-        <p className="text-sm text-destructive">
+        <p className="col-span-1 text-sm text-destructive sm:col-span-2">
           Failed to send message. Please try again.
         </p>
       )}
 
-      <Button type="submit" disabled={isSubmitting || mutation.isPending} className="mt-2">
-        {isSubmitting || mutation.isPending ? 'Sending...' : 'Send Message'}
-      </Button>
+      <div className="sm:col-span-2">
+        <Button type="submit" disabled={isSubmitting || mutation.isPending} className="w-full">
+          {isSubmitting || mutation.isPending ? 'Sending...' : 'Send Message'}
+        </Button>
+      </div>
     </form>
   );
 }

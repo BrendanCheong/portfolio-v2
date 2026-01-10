@@ -10,15 +10,15 @@ import { ContactForm } from '@/components/ContactForm.tsx';
   
   <article class="flex flex-col gap-8 pb-16">
     <header>
-      <h1 class="title text-4xl sm:text-5xl">contact</h1>
+      <h1 class="title text-4xl sm:text-5xl">Contact</h1>
       <p class="mt-4 text-muted-foreground">
         Have a question or want to work together? Send me a message!
       </p>
     </header>
 
-    <div class="max-w-md">
+    <section class="max-w-2xl">
       <ContactForm client:load />
-    </div>
+    </section>
   </article>
 
   <Footer slot="footer" />
