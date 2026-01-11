@@ -1,5 +1,6 @@
 ---
 import '../styles/globals.css';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 interface Props {
   title: string;
@@ -102,5 +103,6 @@ const googleSiteVerification = import.meta.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICAT
       <slot />
     </main>
     <slot name="footer" />
+    <SpeedInsights />
   </body>
 </html>
