@@ -35,6 +35,7 @@
     "zod": "^4.2.1"
   },
   "devDependencies": {
+    "@astrojs/vercel": "^9.0.3",
     "@tailwindcss/typography": "^0.5.19",
     "@tanstack/react-query-devtools": "^5.91.2",
     "@testing-library/jest-dom": "^6.9.1",

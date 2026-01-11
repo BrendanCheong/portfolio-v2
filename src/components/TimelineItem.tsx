@@ -15,7 +15,7 @@ export function TimelineItem({ item }: TimelineItemProps) {
       <div className="flex flex-col items-center">
         <a href={href} target="_blank" rel="noopener noreferrer" className="z-10">
           <Avatar className="size-12 border bg-background">
-            <AvatarImage src={logo} alt={name} className="object-contain p-1" loading="lazy" />
+            <AvatarImage src={logo} alt={name} className="object-contain p-1" loading="eager" />
             <AvatarFallback>{name.charAt(0)}</AvatarFallback>
           </Avatar>
         </a>

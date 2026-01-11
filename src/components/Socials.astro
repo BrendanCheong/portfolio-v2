@@ -11,6 +11,8 @@ import { Icon } from '@/components/Icon';
       target="_blank"
       rel="noopener noreferrer"
       title={social.name}
+      aria-label={social.name}
+      aria-labelledby={social.name}
     >
       <Button variant="ghost" size="icon" className="h-9 w-9">
         <Icon name={social.icon} className="size-4" ariaLabel={social.name} client:idle />

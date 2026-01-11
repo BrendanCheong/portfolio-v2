@@ -1,5 +1,6 @@
 # build output
 dist/
+.vercel/
 
 # generated types
 .astro/
@@ -13,28 +14,33 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# environment variables  
+# environment variables
 .env
 .env.local
 .env.production
+.env*.local
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
+# editors
 .idea/
-
-# vscode setting folder
 .vscode/
+*.swp
+*.swo
+*~
 
-# AI md files
+# testing
+coverage/
+.nyc_output/
+
+# AI files
 CLAUDE.md
 AGENTS.md
-/docs/plans/
+.claude/
+
+# misc
+*.log
+*.tsbuildinfo
