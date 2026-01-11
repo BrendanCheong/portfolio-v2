@@ -1,46 +1,32 @@
-# Astro Starter Kit: Basics
+# My Personal Portfolio v2
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Intro
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Version 2 of my personal portfolio website, rebuilt with Astro for better performance and simpler architecture. V1 was built with Next.js.
 
-## 🚀 Project Structure
+## Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- Astro 5
+- React (islands architecture)
+- Tailwind CSS
+- Shadcn UI components
+- Framer Motion
+- TypeScript
+- Vitest
+- Resend (contact form)
+- Vercel
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Commands
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+| Command | Action |
+| :--- | :--- |
+| `pnpm dev` | Start local dev server at `localhost:4321` |
+| `pnpm build` | Build for production |
+| `pnpm preview` | Preview production build |
+| `pnpm test` | Run tests |
+| `pnpm lint` | Check code formatting |
+| `pnpm format` | Format code with Prettier |
 
-## 🧞 Commands
+## Credits
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+UI components from [shadcn/ui](https://ui.shadcn.com/).
