@@ -11,7 +11,6 @@ const { title, description = 'Full-stack software engineer from Singapore' } = A
 // Constants for meta tags
 const canonicalUrl = `https://brendancej.tech${Astro.url.pathname}`;
 const ogImage = '/rich-preview.png';
-const twitterHandle = '@BrendanCheong';
 const googleSiteVerification = import.meta.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '';
 ---
 
@@ -38,7 +37,6 @@ const googleSiteVerification = import.meta.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICAT
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={`https://brendancej.tech${ogImage}`} />
-    <meta property="twitter:creator" content={twitterHandle} />
     <!-- Enhanced Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
