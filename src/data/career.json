@@ -20,7 +20,7 @@
       "end": "Jun 2024",
       "description": [
         "Built a case management system using React.js and Node.js to handle 1,200+ daily inquiries, improving SQL database speeds and improving response times.",
-        "Developed backend services and queuing APIs using AWS SQS to support high-load AI features, while implementing Docker containers and AWS Lambda database seeding scripts to automate CI/CD pipelines.."
+        "Developed backend services and queuing APIs using AWS SQS to support high-load AI features, while implementing Docker containers and database seeding scripts to automate CI/CD pipelines."
       ]
     },
     {
@@ -31,8 +31,8 @@
       "start": "May 2023",
       "end": "Nov 2023",
       "description": [
-        "Built a drag-and-drop file system using React.js and DynamoDB to manage 10,000+ AI-generated documents, while speeding up bulk content generation by implementing parallel processing with Python Celery.",
-        "Reduced translation costs by 50% by switching to internal LLMs, and improved the user onboarding experience by redesigning the workflow and API polling logic."
+        "Built a scalable drag-and-drop file management system using React.js and DynamoDB to allow users to effectively organize and manage over 10,000+ AI-generated documents.",
+        "Reduced the response times of bulk generating of AI product descriptions by utilising parallel processing with Python Celery."
       ]
     },
     {
@@ -43,9 +43,8 @@
       "start": "May 2022",
       "end": "Aug 2022",
       "description": [
-        "Launched a bespoke CRM application using TypeScript and React.js to manage 200+ customer contracts at scale.",
-        "Built high-performance serverless GraphQL APIs backed by ElasticSearch, reducing customer data search times.",
-        "Achieved 90% code coverage by establishing comprehensive Jest unit and integration testing protocols."
+        "Launched a CRM application using TypeScript and React.js to manage 200+ customer contracts at scale.",
+        "Built high-performance serverless GraphQL APIs backed by ElasticSearch, reducing customer data search times."
       ]
     },
     {
