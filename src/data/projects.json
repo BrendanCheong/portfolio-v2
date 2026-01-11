@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Build.me",
-      "description": "Price aggregator for computer parts. Simplifies PC part price comparisons by collating data from local e-commerce platforms with analytical and data visualization tools.",
+      "description": "Price aggregator for computer parts that simplifies PC part price comparisons by collating data from local e-commerce platforms.",
       "image": "/img/projects/build-me.png",
       "tags": ["React", "TailwindCSS", "MongoDB", "Puppeteer"],
       "links": [

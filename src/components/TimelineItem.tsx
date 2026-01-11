@@ -39,7 +39,7 @@ export function TimelineItem({ item }: TimelineItemProps) {
             <div key={roleIndex}>
               {/* Title and date on same row */}
               <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between">
-                <p className="text-sm text-muted-foreground">{role.title}</p>
+                <p className="text-sm text-muted-foreground font-medium">{role.title}</p>
                 <p className="text-xs text-muted-foreground">
                   {role.start} - {role.end || 'Present'}
                 </p>
@@ -47,7 +47,7 @@ export function TimelineItem({ item }: TimelineItemProps) {
 
               {/* Description bullets */}
               {role.description && role.description.length > 0 && (
-                <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-muted-foreground">
+                <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-muted-foreground text-gray-300">
                   {role.description.map((desc, descIndex) => (
                     <li key={descIndex}>{desc}</li>
                   ))}
