@@ -72,6 +72,31 @@ const googleSiteVerification = import.meta.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICAT
         document.documentElement.classList.add('dark');
       }
     </script>
+    <!-- Structured Data - Person -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Brendan Cheong",
+      "url": "https://brendancej.tech",
+      "sameAs": [
+        "https://github.com/BrendanCheong",
+        "https://www.linkedin.com/in/bcej/"
+      ],
+      "jobTitle": "Full-Stack Software Engineer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SG"
+      },
+      "email": "brendancej1@gmail.com"
+    })} is:inline />
+    <!-- Structured Data - WebSite -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Brendan Cheong - Portfolio",
+      "url": "https://brendancej.tech",
+      "description": "Full-stack software engineer from Singapore"
+    })} is:inline />
   </head>
   <body class="mx-auto flex min-h-screen max-w-3xl flex-col px-6 py-12 sm:px-8 lg:px-0">
     <slot name="header" />
