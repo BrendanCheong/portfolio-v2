@@ -44,3 +44,5 @@ AGENTS.md
 # misc
 *.log
 *.tsbuildinfo
+
+docs/plans
